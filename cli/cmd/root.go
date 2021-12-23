@@ -15,6 +15,7 @@ type Command interface {
 func Execute() error {
 	commands := []Command{
 		NewDisplayCommand(),
+		NewButtonCommand(),
 	}
 
 	flag.Usage = func() {
